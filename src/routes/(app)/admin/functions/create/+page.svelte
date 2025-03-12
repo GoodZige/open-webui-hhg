@@ -54,7 +54,7 @@
 				)
 			);
 
-			await goto('/Ai/webui/admin/functions');
+			await goto('/admin/functions');
 		}
 	};
 

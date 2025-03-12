@@ -103,7 +103,7 @@
 
 	onMount(async () => {
 		if ($user?.role !== 'admin') {
-			await goto('/Ai/webui/');
+			await goto('/');
 		} else {
 			await setGroups();
 			defaultPermissions = await getUserDefaultPermissions(localStorage.token);

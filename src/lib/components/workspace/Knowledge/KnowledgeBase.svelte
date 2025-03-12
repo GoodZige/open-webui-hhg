@@ -534,7 +534,7 @@
 		if (res) {
 			knowledge = res;
 		} else {
-			goto('/Ai/webui/workspace/knowledge');
+			goto('/workspace/knowledge');
 		}
 
 		const dropZone = document.querySelector('body');

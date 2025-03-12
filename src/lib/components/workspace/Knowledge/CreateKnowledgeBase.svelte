@@ -37,7 +37,7 @@
 		if (res) {
 			toast.success($i18n.t('Knowledge created successfully.'));
 			knowledge.set(await getKnowledgeBases(localStorage.token));
-			goto(`/Ai/webui/workspace/knowledge/${res.id}`);
+			goto(`/workspace/knowledge/${res.id}`);
 		}
 
 		loading = false;
@@ -48,7 +48,7 @@
 	<button
 		class="flex space-x-1"
 		on:click={() => {
-			goto('/Ai/webui/workspace/knowledge');
+			goto('/workspace/knowledge');
 		}}
 	>
 		<div class=" self-center">

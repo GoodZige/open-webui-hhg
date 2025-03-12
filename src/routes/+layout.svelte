@@ -63,7 +63,7 @@
 			reconnectionDelay: 1000,
 			reconnectionDelayMax: 5000,
 			randomizationFactor: 0.5,
-			path: '/Ai/webui/ws/socket.io',
+			path: '/ws/socket.io',
 			transports: enableWebsocket ? ['websocket'] : ['polling', 'websocket'],
 			auth: { token: localStorage.token }
 		});
@@ -239,7 +239,7 @@
 					toast.custom(NotificationToast, {
 						componentProps: {
 							onClick: () => {
-								goto(`/Ai/webui/c/${event.chat_id}`);
+								goto(`/c/${event.chat_id}`);
 							},
 							content: content,
 							title: title
@@ -385,7 +385,7 @@
 				toast.custom(NotificationToast, {
 					componentProps: {
 						onClick: () => {
-							goto(`/Ai/webui/channels/${event.channel_id}`);
+							goto(`/channels/${event.channel_id}`);
 						},
 						content: data?.content,
 						title: event?.channel?.name
@@ -501,7 +501,7 @@
 						await user.set(sessionUser);
 						await config.set(await getBackendConfig());
 
-						const redirectPath = querystringValue('redirect') || '/Ai/webui/';
+						const redirectPath = querystringValue('redirect') || '/';
 						goto(redirectPath);
 					}
 				};
@@ -575,19 +575,19 @@
 					} else {
 						// Redirect Invalid Session User to /auth Page
 						localStorage.removeItem('token');
-						await goto('/Ai/webui/auth');
+						await goto('/auth');
 					}
 				} else {
 					// Don't redirect if we're already on the auth page
 					// Needed because we pass in tokens from OAuth logins via URL fragments
-					if ($page.url.pathname !== '/Ai/webui/auth') {
-						await goto('/Ai/webui/auth');
+					if ($page.url.pathname !== '/auth') {
+						await goto('/auth');
 					}
 				}
 			}
 		} else {
 			// Redirect to /error when Backend Not Detected
-			goto(`/Ai/webui/error`);
+			goto(`/error`);
 			debugger
 
 		}

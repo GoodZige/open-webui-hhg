@@ -23,10 +23,10 @@
 			});
 
 			if (!model) {
-				goto('/Ai/webui/workspace/models');
+				goto('/workspace/models');
 			}
 		} else {
-			goto('/Ai/webui/workspace/models');
+			goto('/workspace/models');
 		}
 	});
 
@@ -41,7 +41,7 @@
 				)
 			);
 			toast.success($i18n.t('Model updated successfully'));
-			await goto('/Ai/webui/workspace/models');
+			await goto('/workspace/models');
 		}
 	};
 </script>

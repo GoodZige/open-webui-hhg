@@ -50,7 +50,7 @@
 >
 	<a
 		class=" w-full flex justify-between"
-		href="/Ai/webui/channels/{channel.id}"
+		href="/channels/{channel.id}"
 		on:click={() => {
 			if ($mobile) {
 				showSidebar.set(false);

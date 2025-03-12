@@ -47,7 +47,7 @@
 			await user.set(sessionUser);
 			await config.set(await getBackendConfig());
 
-			const redirectPath = querystringValue('redirect') || '/Ai/webui/';
+			const redirectPath = querystringValue('redirect') || '/';
 			goto(redirectPath);
 		}
 	};
@@ -125,7 +125,7 @@
 
 	onMount(async () => {
 		if ($user !== undefined) {
-			await goto('/Ai/webui/');
+			await goto('/');
 		}
 		await checkOauthCallback();
 

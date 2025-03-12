@@ -49,7 +49,7 @@
 					)
 				);
 				toast.success($i18n.t('Model created successfully!'));
-				await goto('/Ai/webui/workspace/models');
+				await goto('/workspace/models');
 			}
 		}
 	};

@@ -64,7 +64,7 @@
 				}
 			}
 		} else {
-			goto('/Ai/webui/');
+			goto('/');
 		}
 	};
 

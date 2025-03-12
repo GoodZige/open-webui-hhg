@@ -51,7 +51,7 @@
 				await tick();
 				loaded = true;
 			} else {
-				await goto('/Ai/webui/');
+				await goto('/');
 			}
 		})();
 	}
@@ -69,7 +69,7 @@
 		);
 		await chatId.set($page.params.id);
 		chat = await getChatByShareId(localStorage.token, $chatId).catch(async (error) => {
-			await goto('/Ai/webui/');
+			await goto('/');
 			return null;
 		});
 
@@ -118,7 +118,7 @@
 		});
 
 		if (res) {
-			goto(`/Ai/webui/c/${res.id}`);
+			goto(`/c/${res.id}`);
 		}
 	};
 </script>

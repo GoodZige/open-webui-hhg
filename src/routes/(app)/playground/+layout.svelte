@@ -47,7 +47,7 @@
 						)
 							? ''
 							: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
-						href="/Ai/webui/playground">{$i18n.t('Chat')}</a
+						href="/playground">{$i18n.t('Chat')}</a
 					>
 
 					<!-- <a
@@ -63,7 +63,7 @@
 						)
 							? ''
 							: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
-						href="/Ai/webui/playground/completions">{$i18n.t('Completions')}</a
+						href="/playground/completions">{$i18n.t('Completions')}</a
 					>
 				</div>
 			</div>

@@ -166,7 +166,7 @@
 				const chatInput = document.getElementById('chat-input');
 				chatInput?.focus();
 			} else {
-				await goto('/Ai/webui/');
+				await goto('/');
 			}
 		})();
 	}
@@ -399,7 +399,7 @@
 			});
 		} else {
 			if ($temporaryChatEnabled) {
-				await goto('/Ai/webui/');
+				await goto('/');
 			}
 		}
 
@@ -770,7 +770,7 @@
 	const loadChat = async () => {
 		chatId.set(chatIdProp);
 		chat = await getChatById(localStorage.token, $chatId).catch(async (error) => {
-			await goto('/Ai/webui/');
+			await goto('/');
 			return null;
 		});
 

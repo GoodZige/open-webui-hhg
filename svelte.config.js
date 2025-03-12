@@ -15,11 +15,6 @@ const config = {
 			assets: 'build',
 			fallback: 'index.html'
 		}),
-		// 设置 base 路径
-		paths: {
-			base: '/Ai/webui',
-			relative: true
-		}
 	},
 	vitePlugin: {
 		// inspector: {

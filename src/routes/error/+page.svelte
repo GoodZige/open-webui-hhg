@@ -9,7 +9,7 @@
 
 	onMount(async () => {
 		if ($config) {
-			await goto('/Ai/webui/');
+			await goto('/');
 		}
 
 		loaded = true;

@@ -13,10 +13,10 @@
 
 			// Redirect to root with 'youtube' parameter
 
-			goto(`/Ai/webui/?youtube=${encodeURIComponent(videoId)}`);
+			goto(`/?youtube=${encodeURIComponent(videoId)}`);
 		} else {
 			// Redirect to root if 'v' parameter doesn't exist
-			goto('/Ai/webui/');
+			goto('/');
 		}
 	});
 </script>

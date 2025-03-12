@@ -57,7 +57,7 @@
 						<div class="flex md:hidden group w-fit md:items-center">
 							<a
 								class="text-gray-700 dark:text-white text-xs font-semibold underline"
-								href="/Ai/webui/assets/files/whitepaper.pdf"
+								href="/assets/files/whitepaper.pdf"
 								target="_blank">Learn More</a
 							>
 
@@ -91,7 +91,7 @@
 				<div class="hidden md:flex group w-fit md:items-center">
 					<a
 						class="text-gray-700 dark:text-white text-xs font-semibold underline"
-						href="/Ai/webui/"
+						href="/"
 						target="_blank">Learn More</a
 					>
 

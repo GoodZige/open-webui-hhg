@@ -45,14 +45,14 @@
 						class="min-w-fit rounded-full p-1.5 {$page.url.pathname.includes('/home/notes')
 							? ''
 							: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
-						href="/Ai/webui/playground/notes">{$i18n.t('Notes')}</a
+						href="/playground/notes">{$i18n.t('Notes')}</a
 					>
 
 					<a
 						class="min-w-fit rounded-full p-1.5 {$page.url.pathname.includes('/playground/calendar')
 							? ''
 							: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
-						href="/Ai/webui/playground/completions">{$i18n.t('Calendar')}</a
+						href="/playground/completions">{$i18n.t('Calendar')}</a
 					>
 				</div>
 			</div>
