@@ -694,7 +694,7 @@
 		await showArtifacts.set(false);
 
 		if ($page.url.pathname.includes('/c/')) {
-			window.history.replaceState(history.state, '', `/`);
+			window.history.replaceState(history.state, '', `/Ai/webui/`);
 		}
 
 		autoScroll = true;
@@ -1824,7 +1824,7 @@
 			await chats.set(await getChatList(localStorage.token, $currentChatPage));
 			currentChatPage.set(1);
 
-			window.history.replaceState(history.state, '', `/c/${_chatId}`);
+			window.history.replaceState(history.state, '', `/Ai/webui/c/${_chatId}`);
 		} else {
 			_chatId = 'local';
 			await chatId.set('local');

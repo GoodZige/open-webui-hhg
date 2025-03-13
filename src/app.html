@@ -168,6 +168,17 @@
 	html {
 		overflow-y: hidden !important;
 	}
+	.bg-color{
+		height: 100vh; /* 设置全屏高度 */  
+		margin: 0; /* 清除默认边距 */  
+		background:   
+		linear-gradient(to top right, #e3e8ff,white 50%), /* 左侧渐变从白色到 #e3e8ff */
+		linear-gradient(to top left, #d9f3ff, white 50%), /* 右侧渐变从白色到 #d9f3ff */     
+		linear-gradient(to right, #e3e8ff, #d9f3ff 15%);  
+		background-size: 50% 75%, 50% 75%, 100% 25%; /* 设置背景的大小 */  
+		background-position: left bottom, right bottom, left 75%; /* 设置位置 */  
+		background-repeat: no-repeat; /* 不重复背景 */
+	}
 
 	#splash-screen {
 		background: #fff;
