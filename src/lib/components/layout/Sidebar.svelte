@@ -462,7 +462,7 @@
 <div
 	bind:this={navElement}
 	id="sidebar"
-	class="h-screen max-h-[100dvh] min-h-screen select-none {$showSidebar
+	class="bg-color h-screen max-h-[100dvh] min-h-screen select-none {$showSidebar
 		? 'md:relative w-[260px] max-w-[260px]'
 		: '-translate-x-[260px] w-[0px]'} {$isApp
 		? `ml-[4.5rem] md:ml-0 `
