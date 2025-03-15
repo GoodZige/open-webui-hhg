@@ -225,7 +225,7 @@
 								}}
 							>
 								<img
-									src={profileImageUrl}
+									src={'/Ai/webui'+profileImageUrl}
 									class="size-16 rounded-full object-cover shrink-0"
 									alt="Profile"
 								/>

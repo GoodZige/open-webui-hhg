@@ -384,7 +384,7 @@
 								/>
 							{:else}
 								<img
-									src="/static/favicon.png"
+									src="/Ai/webui/static/favicon.png"
 									alt="model profile"
 									class=" rounded-xl size-72 md:size-60 object-cover shrink-0"
 								/>

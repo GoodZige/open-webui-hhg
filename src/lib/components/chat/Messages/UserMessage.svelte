@@ -101,10 +101,10 @@
 	{#if !($settings?.chatBubble ?? true)}
 		<div class={`shrink-0 ${($settings?.chatDirection ?? 'LTR') === 'LTR' ? 'mr-3' : 'ml-3'}`}>
 			<ProfileImage
-				src={message.user
+				src={'/Ai/webui' + (message.user
 					? ($models.find((m) => m.id === message.user)?.info?.meta?.profile_image_url ??
 						'/user.png')
-					: (user?.profile_image_url ?? '/user.png')}
+					: (user?.profile_image_url ?? '/user.png'))}
 				className={'size-8'}
 			/>
 		</div>

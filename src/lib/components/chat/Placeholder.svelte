@@ -122,10 +122,10 @@
 								>
 									<img
 										crossorigin="anonymous"
-										src={model?.info?.meta?.profile_image_url ??
+										src={(model?.info?.meta?.profile_image_url ??
 											($i18n.language === 'dg-DG'
-												? `/doge.png`
-												: `${WEBUI_BASE_URL}/static/favicon.png`)}
+												? `/Ai/webui/doge.png`
+												: `/Ai/webui/static/favicon.png`))}
 										class=" size-9 @sm:size-10 rounded-full border-[1px] border-gray-200 dark:border-none"
 										alt="logo"
 										draggable="false"
@@ -136,7 +136,7 @@
 					</div>
 				</div>
 
-				<div class=" text-3xl @sm:text-4xl line-clamp-1" in:fade={{ duration: 100 }}>
+				<div class=" text-xl @sm:text-xl line-clamp-1" in:fade={{ duration: 100 }}>
 					{#if models[selectedModelIdx]?.name}
 						{models[selectedModelIdx]?.name}
 					{:else}

@@ -759,7 +759,7 @@
 							: 'bg-black dark:bg-white'}  bg-black dark:bg-white"
 						style={(model?.info?.meta?.profile_image_url ?? '/static/favicon.png') !==
 						'/static/favicon.png'
-							? `background-image: url('${model?.info?.meta?.profile_image_url}');`
+							? `background-image: url(/Ai/webui'${model?.info?.meta?.profile_image_url}');`
 							: ''}
 					/>
 				{/if}

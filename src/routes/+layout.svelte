@@ -377,7 +377,7 @@
 					if ($settings?.notificationEnabled ?? false) {
 						new Notification(`${data?.user?.name} (#${event?.channel?.name}) | Open WebUI`, {
 							body: data?.content,
-							icon: data?.user?.profile_image_url ?? `${WEBUI_BASE_URL}/static/favicon.png`
+							icon: '/Ai/webui' + (data?.user?.profile_image_url ?? `${WEBUI_BASE_URL}/static/favicon.png`)
 						});
 					}
 				}
@@ -588,7 +588,6 @@
 		} else {
 			// Redirect to /error when Backend Not Detected
 			goto(`/Ai/webui/error`);
-			debugger
 
 		}
 

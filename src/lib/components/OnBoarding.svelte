@@ -19,7 +19,7 @@
 				<div class=" self-center">
 					<img
 						crossorigin="anonymous"
-						src="/static/favicon.png"
+						src="/Ai/webui/static/favicon.png"
 						class=" w-6 rounded-full"
 						alt="logo"
 					/>

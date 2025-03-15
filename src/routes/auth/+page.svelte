@@ -191,7 +191,7 @@
 								<div class=" text-2xl font-medium">
 									<img
 							crossorigin="anonymous"
-							src="/static/titleLogo.png"
+							src="/Ai/webui/static/titleLogo.png"
 							class="titleLogo-png"
 							alt="titleLogo"
 						/>

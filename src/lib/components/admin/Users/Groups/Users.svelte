@@ -97,8 +97,8 @@
 										src={user.profile_image_url.startsWith(WEBUI_BASE_URL) ||
 										user.profile_image_url.startsWith('https://www.gravatar.com/avatar/') ||
 										user.profile_image_url.startsWith('data:')
-											? user.profile_image_url
-											: `/user.png`}
+											? '/Ai/webui'+user.profile_image_url
+											: `/Ai/webui/user.png`}
 										alt="user"
 									/>
 
