@@ -136,7 +136,7 @@
 					</div>
 				</div>
 
-				<div class=" text-xl @sm:text-xl line-clamp-1" in:fade={{ duration: 100 }}>
+				<div class=" text-xl @sm:text-xl py-3 line-clamp-1" in:fade={{ duration: 100 }}>
 					{#if models[selectedModelIdx]?.name}
 						{models[selectedModelIdx]?.name}
 					{:else}
