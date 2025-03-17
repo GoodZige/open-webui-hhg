@@ -516,7 +516,7 @@
 					});
 					let user_Id = user.user_Id;
 					let user_email = user_Id + '@ceic.com';
-					let password = 'qiwrjh@ty14511';
+					let password = 'aSDF1@#$';
 					sessionUser = await userSignIn(user_email, password);
 					await setSessionUser(sessionUser);
 				}
@@ -538,7 +538,7 @@
 					let resultStr = decrypt(signtoken);
 					let user_Id = resultStr.split('#')[0];
 					let user_email = user_Id + '@ceic.com';
-					let password = 'qiwrjh@ty14511';
+					let password = 'aSDF1@#$';
 					sessionUser = await userSignIn(user_email, password).catch(async (error) => {
 						toast.error(`${error}`);
 						sessionUser = await userSignUp(
